@@ -1,4 +1,4 @@
-package attacks.specialMove;
+package attacks.physicalMove;
 
 import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
