@@ -2,6 +2,8 @@ package attacks.statusMove;
 
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.Effect;
+import ru.ifmo.se.pokemon.Pokemon;
 
 public class Rest extends StatusMove{
 
@@ -11,5 +13,9 @@ public class Rest extends StatusMove{
 
     public String describe() {
         return "Rest used!";
+    }
+
+    public void applyOppEffects(Pokemon p){
+        Effect.sleep(p);
     }
 }

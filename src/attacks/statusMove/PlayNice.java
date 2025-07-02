@@ -1,7 +1,7 @@
 package attacks.statusMove;
 
-import ru.ifmo.se.pokemon.StatusMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
+
 
 public class PlayNice extends StatusMove{
 
@@ -11,5 +11,9 @@ public class PlayNice extends StatusMove{
 
     public String describe() {
         return "Play nice used!";
+    }
+
+    public void applyOppEffects(Pokemon p){
+        p.setMod(Stat.ATTACK, -1);
     }
 }

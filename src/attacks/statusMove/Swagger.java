@@ -1,7 +1,9 @@
 package attacks.statusMove;
 
+import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.Effect;
 
 public class Swagger extends StatusMove{
 
@@ -11,5 +13,10 @@ public class Swagger extends StatusMove{
 
     public String describe() {
         return "Swagger used!";
+    }
+
+    public void applyOppEffects(Pokemon p) {
+
+        Effect.confuse(p);
     }
 }
